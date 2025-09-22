@@ -1,0 +1,121 @@
+<div class="modal fade" id="loginSignUp" tabindex="-1" aria-labelledby="loginSignUpLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Cadastro -->
+        <div class="modal-body" id="signUp">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="row gx-5 align-items-center p-3">
+            <form class="col-md-6" autocomplete="off">
+              <h3>Crie Sua Conta</h3>
+              <button type="button" class="mb-4 w-100 rounded-3" id="singWithGoogle">
+                <img src="src/images/google.png" class="img-fluid" width="20" alt="ícone do Google"> 
+                <span class="text-secondary"> 
+                  Cadastre-se com o Google
+                </span>
+              </button>
+              <div id="orSpan" class="text-secondary mb-3">
+                <span>Ou</span>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="text"
+                  name="text"
+                  id="username"
+                />
+                <label for="username">Seu Nome</label>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="OFF"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label for="email"><i class="bi bi-at"></i> E-mail</label>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="password"
+                  name="text"
+                  id="password"
+                />
+                <label for="username"><i class="bi bi-lock"></i> Senha</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="yes" id="check__terms" checked required>
+                <label class="form-check-label" for="check__terms">
+                  Eu concordo com os <a href="">Termos e Condições</a>
+                </label>
+              </div>
+              <input type="submit" value="Registrar" class="btn btn-success">
+              <p class="text-center mt-4 text-secondary">
+                Já tem uma conta? <a href="#logIn" id="logInBtn">Entrar</a>
+              </p>
+            </form>
+            <div class="col-md-6 order-sm-1">
+              <img src="src/images/dog-1.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <!-- Login -->
+        <div class="modal-body d-none" id="logIn">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="row gx-5 align-items-center p-3">
+            <form class="col-md-6 order-2" autocomplete="off">
+              <h3>Entre na Sua Conta</h3>
+              <button type="button" class="mb-4 w-100 rounded-3" id="singWithGoogle">
+                <img src="src/images/google.png" class="img-fluid" width="20" alt="ícone do Google"> 
+                <span class="text-secondary"> 
+                  Entrar com o Google
+                </span>
+              </button>
+              <div id="orSpan" class="text-secondary mb-3">
+                <span>Ou</span>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="OFF"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label for="email"><i class="bi bi-at"></i> E-mail</label>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="password"
+                  name="text"
+                  id="password"
+                />
+                <label for="username"><i class="bi bi-lock"></i> Senha</label>
+              </div>
+              <div class="form-check p-0">
+                <label class="form-check-label">
+                  <a href="">Esqueceu a senha?</a>
+                </label>
+              </div>
+              <input type="submit" value="Entrar" class="btn btn-success">
+              <p class="text-center mt-4 text-secondary">
+                Não tem uma conta? <a href="#signUp" id="signUpBtn">Cadastre-se</a>
+              </p>
+            </form>
+            <div class="col-md-6 order-sm-1">
+              <img src="src/images/dog-1.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
